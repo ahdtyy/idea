@@ -1,0 +1,5 @@
+﻿判断HP数值 =IF(IFERROR(FIND("+",V3),0)>0,1,IF(IFERROR(FIND("-",V3),0)>0,2,0))
+判断是否活检 =IF(ISBLANK(U3)=TRUE,2,1)
+对象来源 =IF(ISBLANK(H3)=TRUE,1,2)
+空门诊号=CONCATENATE("M000",ROW())
+HP检测方法=if(p3>0,5,"")
